@@ -17,9 +17,5 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-# python installs
-#COPY requirements.txt /tmp/pip-tmp/
-#RUN pip3 install -r /tmp/pip-tmp/requirements.txt \
-#    && rm -rf /tmp/pip-tmp
 
-CMD ["bash"]
+
