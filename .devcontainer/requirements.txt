@@ -1,0 +1,18 @@
+# basics
+wheel
+setuptools
+ipykernel
+
+# format
+black[jupyter]
+
+# python data
+pandas
+numpy
+matplotlib
+seaborn
+lightgbm
+distributed
+dask[complete]
+fastparquet
+pyarrow
