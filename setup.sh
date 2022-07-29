@@ -7,7 +7,7 @@
 /bin/bash +x clone-repos.sh
 
 ## auth
-/bin/bash +x auth.sh
+source auth.sh
 
 ## assume all is well
 exit 0
