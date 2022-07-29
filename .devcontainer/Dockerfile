@@ -18,8 +18,9 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 # python installs
-COPY requirements.txt .
-RUN pip install -r requirements.txt && rm requirements.txt
+COPY requirements.txt /tmp/pip-tmp/
+RUN pip install -r /tmp-pip/requirements.txt \
+    && rm -rf /tmp/pip-tmp
 
 # clone repositories
 RUN gh repo clone dbt-labs/dbt-core \
