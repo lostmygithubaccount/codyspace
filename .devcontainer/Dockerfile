@@ -19,7 +19,7 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 
 # python installs
 COPY requirements.txt /tmp/pip-tmp/
-RUN pip install -r /tmp-pip/requirements.txt \
+RUN pip3 install -r /pip-tmp/requirements.txt \
     && rm -rf /tmp/pip-tmp
 
 # clone repositories
