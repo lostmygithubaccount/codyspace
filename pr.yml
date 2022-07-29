@@ -1,0 +1,27 @@
+# **what?**
+# The purpose of this workflow is to add new prs to the
+# "Core management" project in dbt Labs.
+
+# **why?**
+# Allow us to triage new prs directly in GitHub.
+
+# **when?**
+# All opened or transferred prs.
+
+name: add-pr-to-project
+
+on:
+  pr:
+    types:
+      - opened
+      - transferred
+
+jobs:
+  add-to-project:
+    name: Add pr to "Core managment" project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add pr to project
+        uses: dbt-labs/actions/.github/workflows/add-pr-to-project.yml
+        env:
+          FISHTOWN_BOT_PAT: ${{ secrets.FISHTOWN_BOT_PAT }}
