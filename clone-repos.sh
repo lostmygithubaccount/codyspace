@@ -1,20 +1,12 @@
 #!/bin/bash
 
-# I never learned for loops
+# get array of repos
+repos=$(cat "repos-local.txt")
+readarray -t repos_array <<<$repos
 
-orgs_array=("lostmygithubaccount" "$org")
-
-for org in ${orgs_array[@]}
+# clone each repo
+for repo in ${repos_array[@]}
 do
-    echo $org
-    repos=$(cat "$org-repos.txt")
-
-    readarray -t repos_array <<<$repos
-
-    for repo in ${repos_array[@]}
-    do
-        echo $org/$repo
-        gh repo clone "$org/$repo"
-    done
-
+    echo $repo
+    gh repo clone $repo
 done
