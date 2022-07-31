@@ -7,6 +7,66 @@
 	"service": "app",
 	"workspaceFolder": "/workspaces/codyspace",
 
+	// stealing from https://github.com/dbt-labs/jaffle_shop_duckdb/pull/28/files
+	"settings": {
+        "terminal.integrated.defaultProfile.linux#": "/bin/sh",
+        "files.associations": {
+            "*.sql": "jinja-sql",
+            "*.sqlfluff": "ini",
+            "*.yml": "yaml",
+            "**/target/**": ""
+        },
+        "sql.linter.executablePath": "/usr/local/bin/sqlfluff",
+        "sql.format.enable": true,
+        "sql.linter.run": "onType",
+		// I have most of these in .gitignore dotfiles...but no harm?
+        "files.exclude": {
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/CVS": true,
+            "**/.DS_Store": true,
+            "**/__pycache__": true
+          },
+		  // no clue what this does
+          "findrelated.workspaceRulesets": [
+            {
+              "name": "sql",
+              "rules": [
+                {
+                  "pattern": "^(.*/)?models/(.*/)?(.+\\.sql)$",
+                  "locators": [
+                    "**/compiled/**/$3"
+                  ]
+                },
+                {
+                  "pattern": "^(.*/)?compiled/(.*/)?(.+\\.sql)$",
+                  "locators": [
+                    "**/run/**/$3"
+                  ]
+                },
+                {
+                  "pattern": "^(.*/)?run/(.*/)?(.+\\.sql)$",
+                  "locators": [
+                    "**/models/**/$3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "findrelated.applyRulesets": [
+            "sql"
+          ],
+          "findrelated.applyWorkspaceRulesets": [
+            "sql"
+          ],
+          "workbench.editor.highlightModifiedTabs": true,
+          "workbench.editor.labelFormat": "medium",
+          "workbench.editor.revealIfOpen": true,
+          "editor.rulers": [
+            99
+          ]
+    },
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -29,9 +89,41 @@
 			},
 			
 			// Add the IDs of extensions you want installed when the container is created.
+			// stealing again from PR linked above, adding some of my own
 			"extensions": [
 				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"ms-python.vscode-pylance",
+				"ckolkman.vscode-postgres",
+				"cschlosser.doxdocgen",
+				"eamodio.gitlens",
+				"github.codespaces",
+				"github.codespaces",
+				"github.copilot",
+				"github.remotehub",
+				"github.vscode-pull-request-github",
+				"mechatroner.rainbow-csv",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-ai",
+				"ms-toolsai.vscode-ai-remote",
+				"ms-vscode-remote.remote-containers",
+				"ms-vscode.azure-account",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cpptools-themes",
+				"ms-vscode.makefile-tools",
+				"twxs.cmake",
+				"vscodevim.vim",
+				"waderyan.gitblame",
+				"bastienboutonnet.vscode-dbt",
+				"dorzey.vscode-sqlfluff",
+				"editorconfig.editorconfig",
+				"amodio.find-related",
+				"ms-azuretools.vscode-docker",
+				"visualstudioexptteam.vscodeintellicode",
+				"samuelcolvin.jinjahtml"
 			]
 		}
 	},
