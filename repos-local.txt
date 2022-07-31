@@ -1,0 +1,17 @@
+dbt-labs/dbt-core
+dbt-labs/dbt-snowflake
+dbt-labs/dbt-redshift
+dbt-labs/dbt-bigquery
+dbt-labs/dbt-spark
+dbt-labs/dbt-databricks
+dbt-labs/actions
+dbt-labs/dbt-rpc
+dbt-labs/dbt-server
+dbt-labs/dbt-utils
+dbt-labs/dbt-starter-project
+dbt-labs/jaffle_shop
+dbt-labs/jaffle_shop_duckdb
+dbt-labs/internal-analytics
+dbt-labs/docs.getdbt.com
+lostmygithubaccount/dotfiles
+lostmygithubaccount/work

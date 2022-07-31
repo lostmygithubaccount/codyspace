@@ -1,0 +1,6 @@
+dbt-core
+dbt-snowflake
+dbt-redshift
+dbt-bigquery
+dbt-spark
+dbt-databricks

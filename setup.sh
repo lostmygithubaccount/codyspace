@@ -6,8 +6,8 @@
 ## clone repos
 /bin/bash +x clone-repos.sh
 
-## auth
-source auth.sh
+## git
+source git.sh
 
 ## assume all is well
 exit 0
