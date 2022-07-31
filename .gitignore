@@ -1,3 +1,35 @@
+# mac
+.DS_STORE
+
+# vscode
+.vscode
+
+# venvs
+.venvs
+venvs
+
+# python
+.ipynb_checkpoints
+
+# personal conventions
+out.txt
+out.csv
+out.json
+out2.json
+out3.json
+out4.json
+temp.txt
+temp.ipynb
+
+# dbt
+target/
+dbt_packages/
+
+# logs
+logs
+*snowsql*log*
+
+# repos
 actions
 core-gh-project-testing
 dbt-bigquery
@@ -13,8 +45,6 @@ docs.getdbt.com
 internal-analytics
 jaffle_shop
 jaffle_shop_duckdb
-scripts
-dotfiles
 scripts
 work
 gists
