@@ -34,12 +34,12 @@ do
 
     git checkout "tags/$tag" -b $branch
 
-    if [ -f "$e_req" ]; then
-        echo "editable reqs"
-        pip install $pip_options -r $e_req
-    else
-        echo "direct"
-        pip install $pip_options -e .
-    fi
-    cd $CWD
+    #if [ -f "$e_req" ]; then
+    #    echo "editable reqs"
+    #    pip install $pip_options -r $e_req
+    #else
+    #    echo "direct"
+    #    pip install $pip_options -e .
+    #fi
+    #cd $CWD
 done
