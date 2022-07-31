@@ -136,7 +136,7 @@
 	//"postCreateCommand": "pip install --user -r requirements.txt && /bin/bash +x setup.sh",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "cody",
+	"remoteUser": "vscode",
 	"features": {
 		"git": "latest",
 		"git-lfs": "latest",
