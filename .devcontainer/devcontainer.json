@@ -91,12 +91,12 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			// stealing again from PR linked above, adding some of my own
 			"extensions": [
+				"vscodevim.vim",
 				"ms-python.python",
-				"ms-python.vscode-pylance",
+				//"ms-python.vscode-pylance",
 				"ckolkman.vscode-postgres",
 				"cschlosser.doxdocgen",
 				"eamodio.gitlens",
-				"github.codespaces",
 				"github.codespaces",
 				"github.copilot",
 				"github.remotehub",
@@ -105,24 +105,14 @@
 				"ms-toolsai.jupyter",
 				"ms-toolsai.jupyter-keymap",
 				"ms-toolsai.jupyter-renderers",
-				"ms-toolsai.vscode-ai",
-				"ms-toolsai.vscode-ai-remote",
 				"ms-vscode-remote.remote-containers",
-				"ms-vscode.azure-account",
 				"ms-vscode.cmake-tools",
-				"ms-vscode.cpptools",
-				"ms-vscode.cpptools-extension-pack",
-				"ms-vscode.cpptools-themes",
-				"ms-vscode.makefile-tools",
 				"twxs.cmake",
-				"vscodevim.vim",
 				"waderyan.gitblame",
 				"bastienboutonnet.vscode-dbt",
 				"dorzey.vscode-sqlfluff",
 				"editorconfig.editorconfig",
 				"amodio.find-related",
-				"ms-azuretools.vscode-docker",
-				"visualstudioexptteam.vscodeintellicode",
 				"samuelcolvin.jinjahtml"
 			]
 		}
