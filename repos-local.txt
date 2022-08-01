@@ -11,6 +11,7 @@ dbt-labs/dbt-utils
 dbt-labs/dbt-starter-project
 dbt-labs/jaffle_shop
 dbt-labs/jaffle_shop_duckdb
+dbt-labs/nyc_taxi_with_python
 dbt-labs/internal-analytics
 dbt-labs/docs.getdbt.com
 lostmygithubaccount/dotfiles
