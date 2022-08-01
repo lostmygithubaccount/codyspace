@@ -1,6 +1,7 @@
 # basics
 wheel
 setuptools
+ipython
 ipykernel
 
 # format
@@ -16,3 +17,6 @@ distributed
 dask[complete]
 fastparquet
 pyarrow
+
+# testing
+click
