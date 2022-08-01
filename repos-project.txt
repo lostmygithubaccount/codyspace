@@ -7,3 +7,4 @@ dbt-server
 dbt-spark
 dbt-starter-project
 dbt-utils
+homebrew-dbt

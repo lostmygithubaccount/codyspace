@@ -42,6 +42,7 @@ dbt-spark
 dbt-starter-project
 dbt-utils
 docs.getdbt.com
+homebrew-dbt
 internal-analytics
 jaffle_shop
 jaffle_shop_duckdb

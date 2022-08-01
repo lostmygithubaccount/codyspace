@@ -1,8 +1,9 @@
 # basics
 wheel
-setuptools
 ipython
+requests
 ipykernel
+setuptools
 
 # format
 black[jupyter]

@@ -14,5 +14,6 @@ dbt-labs/jaffle_shop_duckdb
 dbt-labs/nyc_taxi_with_python
 dbt-labs/internal-analytics
 dbt-labs/docs.getdbt.com
+dbt-labs/homebrew-dbt
 lostmygithubaccount/dotfiles
 lostmygithubaccount/work
