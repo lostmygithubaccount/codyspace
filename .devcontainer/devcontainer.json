@@ -1,12 +1,23 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.238.1/containers/python-3-postgres
 // Update the VARIANT arg in docker-compose.yml to pick a Python version
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.241.1/containers/python-3
 {
 	"name": "codyspace",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
-	"workspaceFolder": "/workspaces/codyspace",
-
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": { 
+			// Update 'VARIANT' to pick a Python version: 3, 3.10, 3.9, 3.8, 3.7, 3.6
+			// Append -bullseye or -buster to pin to an OS version.
+			// Use -bullseye variants on local on arm64/Apple Silicon.
+			"VARIANT": "3.10",
+			// Options
+			"NODE_VERSION": "lts/*"
+		}
+	},
+	
 	// stealing from https://github.com/dbt-labs/jaffle_shop_duckdb/pull/28/files
 	"settings": {
         "terminal.integrated.defaultProfile.linux#": "/bin/sh",
@@ -93,7 +104,7 @@
 			"extensions": [
 				"vscodevim.vim",
 				"ms-python.python",
-				//"ms-python.vscode-pylance",
+				"ms-python.vscode-pylance",
 				"ckolkman.vscode-postgres",
 				"cschlosser.doxdocgen",
 				"eamodio.gitlens",
