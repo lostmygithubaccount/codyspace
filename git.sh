@@ -1,5 +1,3 @@
-#!/bin/bash +x
-
 # setup git
 unset GITHUB_TOKEN
 echo $CODESPACE_PAT | gh auth login --with-token
