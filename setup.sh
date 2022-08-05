@@ -1,10 +1,10 @@
 #!/bin/bash
 
-## installs
-/bin/bash +x installs.sh
-
 ## clone repos
 /bin/bash +x clone-repos.sh
+
+## installs
+/bin/bash +x installs.sh
 
 ## git
 source git.sh
