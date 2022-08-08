@@ -1,13 +1,13 @@
 #!/bin/bash
 
-## clone repos
-/bin/bash +x clone-repos.sh
+# clone repos
+#/bin/bash +x clone-repos.sh
 
-## installs
+# installs
 /bin/bash +x installs.sh
 
-## git
+# git
 source git.sh
 
-## assume all is well
+# assume all is well
 exit 0
