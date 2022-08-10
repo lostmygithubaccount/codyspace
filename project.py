@@ -180,12 +180,12 @@ def main(
             # add issues to the project
             add_items_to_project(project_id, issues)
         # for each pr label
-        for pr_label in pr_labels:
-            print(f"Processing PR label: {pr_label}\n...")
-            # get the list of PRs for the repo and label
-            prs = get_issues(repo, pr_label, num_items)
-            # add PRs to the project
-            add_items_to_project(project_id, prs)
+        #for pr_label in pr_labels:
+        #    print(f"Processing PR label: {pr_label}\n...")
+        #    # get the list of PRs for the repo and label
+        #    prs = get_issues(repo, pr_label, num_items)
+        #    # add PRs to the project
+        #    add_items_to_project(project_id, prs)
 
 
 # run script
