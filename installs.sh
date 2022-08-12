@@ -16,4 +16,4 @@ gcloud auth application-default login \
   --scopes=https://www.googleapis.com/auth/bigquery,\
 https://www.googleapis.com/auth/drive.readonly,\
 https://www.googleapis.com/auth/iam.test
-gcloud config set project dbt-test-env
+#gcloud config set project dbt-test-env
