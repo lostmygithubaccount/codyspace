@@ -21,3 +21,7 @@ pyarrow
 
 # testing
 click
+
+# gcp
+google-cloud-storage[dataproc]>=2.4.0
+google-cloud-dataproc[dataproc]>=4.0.3
