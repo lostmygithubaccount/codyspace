@@ -22,4 +22,4 @@ gcloud auth application-default login
 # https://www.googleapis.com/auth/drive.readonly,\
 # https://www.googleapis.com/auth/iam.test
 
-# order of the config and auth call above seem to mattter?
+# order of the config and auth call above seem to matter?
