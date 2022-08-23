@@ -86,7 +86,8 @@
 			"settings": { 
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
 				"python.linting.enabled": true,
-				"python.linting.pylintEnabled": true,
+				//"python.linting.pylintEnabled": true,
+				//"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
 				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
 				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
 				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
@@ -95,7 +96,6 @@
 				"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
 				"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
 				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
-				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
 				"python.testing.pytestPath": "/usr/local/py-utils/bin/pytest"
 			},
 			
