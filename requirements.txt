@@ -21,3 +21,6 @@ pyarrow
 
 # testing
 click
+
+# snowpark
+snowflake-snowpark-python
