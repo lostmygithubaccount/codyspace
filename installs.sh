@@ -11,5 +11,7 @@ pip install -r requirements.txt
 curl -O https://sfc-repo.azure.snowflakecomputing.com/snowsql/bootstrap/1.2/linux_x86_64/snowsql-1.2.23-linux_x86_64.bash
 bash +x snowsql-1.2.23-linux_x86_64.bash
 rm snowsql-1.2.23-linux_x86_64.bash
-gh repo clone dotfiles
+if [ ! -d "dotfiles" ]; then 
+    gh repo clone dotfiles
+fi
 cp dotfiles/.snowsql/config ~/.snowsql/config
