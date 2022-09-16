@@ -6,3 +6,6 @@ brew install tree cloc
 # python installs
 pip install --upgrade pip # yolo
 pip install -r requirements.txt
+
+# linux
+apt-get update && apt-get upgrade -y
