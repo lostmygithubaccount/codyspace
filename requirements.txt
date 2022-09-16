@@ -20,6 +20,7 @@ distributed
 dask[complete]
 fastparquet
 pyarrow
+pyhive[hive]
 
 # testing
 click
