@@ -6,8 +6,5 @@
 ## installs
 /bin/bash +x installs.sh
 
-## git
-source git.sh
-
 ## assume all is well
 exit 0

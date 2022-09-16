@@ -35,11 +35,12 @@ actions
 core-gh-project-testing
 dbt-bigquery
 dbt-core
+dbt-snowflake
 dbt-redshift
+dbt-spark
+dbt-databricks
 dbt-rpc
 dbt-server
-dbt-snowflake
-dbt-spark
 dbt-starter-project
 dbt-utils
 docs.getdbt.com
