@@ -4,6 +4,8 @@ ipython
 requests
 ipykernel
 setuptools
+virtualenv
+pipx
 
 # format
 black[jupyter]

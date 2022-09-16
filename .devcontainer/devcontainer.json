@@ -80,12 +80,19 @@
     },
 	// Configure tool-specific properties.
 	"customizations": {
+		"codespaces": {
+			"repositories": {
+				"dbt-labs/*": {
+					"permissions": "write-all"
+				}
+			}
+		},
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
-				"python.linting.enabled": true,
+				//"python.linting.enabled": true,
 				//"python.linting.pylintEnabled": true,
 				//"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
 				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
