@@ -124,13 +124,13 @@
 				"ms-toolsai.jupyter-renderers",
 				"ms-vscode-remote.remote-containers",
 				"ms-vscode.cmake-tools",
-				"twxs.cmake",
+				//"twxs.cmake",
 				"waderyan.gitblame",
 				"bastienboutonnet.vscode-dbt",
-				"dorzey.vscode-sqlfluff",
-				"editorconfig.editorconfig",
-				"amodio.find-related",
-				"samuelcolvin.jinjahtml"
+				//"dorzey.vscode-sqlfluff",
+				//"amodio.find-related",
+				//"samuelcolvin.jinjahtml",
+				"editorconfig.editorconfig"
 			]
 		}
 	},
