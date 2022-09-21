@@ -8,3 +8,4 @@ if [ ! -d "dotfiles" ]; then
     gh repo clone dotfiles
 fi
 cp dotfiles/.snowsql/config ~/.snowsql/config
+rm -r \~/

@@ -7,7 +7,7 @@
 /bin/bash +x installs.sh
 
 ## for venvs
-mkdir ~/venvs
+mkdir $cs/venvs
 
 ## assume all is well
 exit 0
