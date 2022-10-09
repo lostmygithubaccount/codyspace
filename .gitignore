@@ -43,11 +43,13 @@ dbt-rpc
 dbt-server
 dbt-starter-project
 dbt-utils
+dbt-docs
 docs.getdbt.com
 homebrew-dbt
 internal-analytics
 jaffle_shop
 jaffle_shop_duckdb
+jaffle_shop_with_fal
 nyc_taxi_with_python
 core-project
 scripts
@@ -56,8 +58,10 @@ gists
 dotfiles
 corp
 learn-dbt-python
+python-testing
 
 dbt-macros
 r-project
 triage
 dbt-demo-data
+test
