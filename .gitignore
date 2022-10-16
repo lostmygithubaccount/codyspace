@@ -65,3 +65,5 @@ r-project
 triage
 dbt-demo-data
 test
+demo-*
+coalesce-2022-*
